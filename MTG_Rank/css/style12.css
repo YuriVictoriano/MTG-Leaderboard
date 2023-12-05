@@ -1,0 +1,132 @@
+
+body { 
+  padding: 0;
+  margin: 0;
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "fonte";
+    background-color: #aabaf0;
+}
+
+.divPai{
+  border-radius: 20px;
+  margin: 5% 20% 5% 20%; 
+  min-height: 100vh;
+  height: auto;
+  background-image: linear-gradient(to bottom, #065d7ab0, #0c6881c0, #128bade0);
+  transition: 0.4s;
+}
+
+.container{
+  margin: 1.5% 5% 0 5%; 
+  display: flex; 
+  flex-direction: row; 
+  border-radius: 20px;
+}
+
+.overlay{
+  background-color: #0f5585; 
+  width: 100%;
+  border-radius: 0 50px 50px 0;
+  text-align: center;
+  padding-top: 3%;
+  transition: 0.4s;
+}
+
+hr {
+    margin: 10px auto;
+    border-color: #ffffff;
+}
+
+span{
+  font-size: 16px;
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+  text-align: left; 
+  padding-left: 5%;
+}
+
+.div_playerboard{
+  text-align: left; 
+  margin-right: 5%;
+}
+
+.pontos{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+    
+}
+
+
+.completo_hover:hover .image{
+  margin-left: -2%; 
+  transition: 0.4s; 
+}
+
+.completo_hover{
+  max-width: 100%;  
+  transition: all 3s;
+}
+
+
+.completo_hover .overlay{
+  background-color: #0f3e85; 
+  transition: 0.4s;
+}
+
+.image{
+  border-radius: 10px; 
+  height: 75px; 
+  border-radius: 50px 0 0 50px;
+}
+
+@font-face{
+  font-family: "fonte";
+
+  /*Caso a fonte esteja na mesma pasta*/
+  src: url("font/DiloWorld-mLJLv.ttf");
+}
+/* descrição das missões */
+
+.container_desc{  
+  margin: 0 5% 0 5%; 
+  display: none; 
+  flex-direction: row;  
+  cursor: pointer;
+}
+.overlay_desc{
+  background-color: #0e6424; 
+  width: 100%;
+  text-align: justify;
+  padding: 2%;
+  border-radius: 0 0 20px 20px;
+  margin-top: -1.9%;
+}
+
+
+@media (max-width: 1305px){
+  .ranks_bnt:hover span{
+    display: none;    
+  }
+  .divPai{
+    margin: 5% 10% 5% 10%; 
+    transition: 0.4s;
+      min-height: 60vh;
+  }
+
+  }
+  @media (max-width: 1000px){
+    .divPai{
+      margin: 0%; 
+      transition: 0.4s;
+      border-radius: 0px;
+      min-height: 90vh;
+    }
+     .overlay{
+      padding-top: 0%;
+     }
+}
